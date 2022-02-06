@@ -1,5 +1,5 @@
 {
-  "name":         "Tecdynamics-eurobank",
+  "name":         "tecdynamics/eurobank",
     "description": "Eurobank PHP Library",
     "keywords": [
         "eurobank",
@@ -8,14 +8,16 @@
     ],
     "homepage": "https://tecdynamics.co.uk/",
     "license": "MIT",
-    "authors": [
+   "authors": [
         {
-            "name": "Eurobank and contributors",
-            "homepage": "https://github.com/tecdynamics/eurobank/contributors"
+            "name": "Michail Fragkiskos",
+            "homepage": "https://github.com/tecdynamics/eurobank",
+            "role": "Manager",
+            "email": "support@tecdynamics.co.uk"
         }
     ],
   "require": {
-    "php": ">=5.5",
+    "php": ">=7.2",
       "ext-curl": "*",
       "ext-json": "*",
       "ext-mbstring": "*"
@@ -24,6 +26,10 @@
         "psr-4": {
             "Eurobank\\": "lib/"
         }
-    }
+    } ,
+  "config": {
+        "sort-packages": true
+    },
+    "minimum-stability" : "dev"
   }
  
