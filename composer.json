@@ -1,0 +1,29 @@
+{
+  "name":         "Tecdynamics/eurobank",
+    "description": "Eurobank PHP Library",
+    "keywords": [
+        "eurobank",
+        "payment processing",
+        "api"
+    ],
+    "homepage": "https://tecdynamics.co.uk/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eurobank and contributors",
+            "homepage": "https://github.com/tecdynamics/eurobank/contributors"
+        }
+    ],
+  "require": {
+    "php": ">=5.5",
+      "ext-curl": "*",
+      "ext-json": "*",
+      "ext-mbstring": "*"
+  },
+    "autoload": {
+        "psr-4": {
+            "Eurobank\\": "lib/"
+        }
+    }
+  }
+}
