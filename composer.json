@@ -1,35 +1,10 @@
 {
-  "name":         "tecdynamics/eurobank",
+    "name": "tecdynamics/eurobank",
+    "type": "package",
     "description": "Eurobank PHP Library",
     "keywords": [
         "eurobank",
         "payment processing",
         "api"
-    ],
-    "homepage": "https://tecdynamics.co.uk/",
-    "license": "MIT",
-   "authors": [
-        {
-            "name": "Michail Fragkiskos",
-            "homepage": "https://github.com/tecdynamics/eurobank",
-            "role": "Manager",
-            "email": "support@tecdynamics.co.uk"
-        }
-    ],
-  "require": {
-    "php": ">=7.2",
-      "ext-curl": "*",
-      "ext-json": "*",
-      "ext-mbstring": "*"
-  },
-    "autoload": {
-        "psr-4": {
-            "Eurobank\\": "lib/"
-        }
-    } ,
-  "config": {
-        "sort-packages": true
-    },
-    "minimum-stability" : "dev"
-  }
- 
+    ]
+}

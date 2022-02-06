@@ -1,0 +1,10 @@
+{
+    "name": "Eurobank Payment Gateway",
+    "namespace": "Botble\\Eurobank\\",
+    "provider": "Botble\\Eurobank\\Providers\\EurobankServiceProvider",
+    "author": "Tec-Dynamics Technologies",
+    "url": "https://tecdynamics.co.uk",
+    "version": "1.0",
+    "description": "Eurobank payment gateway integration",
+    "require": ["payment"]
+}
