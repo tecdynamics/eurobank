@@ -14,7 +14,7 @@
     @if ($refunds = Arr::get($paymentModel->metadata, 'refunds', []))
         @foreach ($refunds as $refund)
             <div id="{{ Arr::get($refund, 'data.id') }}">
-                @include('plugins/razorpay::refund-detail')
+                @include('plugins/alphabank::refund-detail')
             </div>
         @endforeach
     @endif

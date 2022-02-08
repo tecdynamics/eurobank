@@ -18,10 +18,19 @@ class EurobankServiceProvider extends ServiceProvider
         if (is_plugin_active('payment')) {
             $this->setNamespace('plugins/eurobank')
                 ->loadHelpers()
+                ->loadRoutes(['web'])
+                ->loadAndPublishTranslations()
                 ->loadAndPublishViews()
+                ->loadMigrations()
                 ->publishAssets();
 
-            $this->app->register(HookServiceProvider::class);
-        }
+            $this->app->booted(function () {
+                $this->app->make('config')->set([
+                    'eurobank.key' => get_payment_setting('api_key', EUROBANK_PAYMENT_METHOD_NAME),
+                ]);
+
+                $this->app->register(HookServiceProvider::class);
+            });
+             }
     }
 }

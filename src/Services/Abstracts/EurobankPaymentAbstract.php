@@ -66,7 +66,7 @@ abstract class EurobankPaymentAbstract implements ProduceServiceInterface
     {
         $key = get_payment_setting('key', EUROBANK_PAYMENT_METHOD_NAME);
         $secret = get_payment_setting('secret', EUROBANK_PAYMENT_METHOD_NAME);
-        $this->client = new Api($key, $secret);
+        $this->client = null;//new Api($key, $secret);
 
         return $this;
     }
